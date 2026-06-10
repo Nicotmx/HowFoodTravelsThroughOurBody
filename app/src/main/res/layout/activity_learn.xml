@@ -1,10 +1,404 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LearnActivity">
+    android:background="#FFF4D6"
+    android:fillViewport="false"
+    android:scrollbars="vertical"
+    android:fadeScrollbars="false">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn About Digestion"
+            android:textColor="#FF7A00"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Follow the journey of food inside your body"
+            android:textColor="#555555"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Mouth -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#FF9800"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp">
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/mouth_icon"
+                    android:contentDescription="Mouth icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mouth"
+                        android:textColor="#FFFFFF"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Digestion starts in the mouth. Teeth break food into small pieces, and saliva makes food soft and easier to swallow."
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnMouthAudio"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:src="@android:drawable/ic_lock_silent_mode_off"
+                    android:tint="#FF7A00"
+                    android:padding="10dp"
+                    android:contentDescription="Play mouth audio" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="&#8595;"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FF7A00"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Esophagus -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#FFC107"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp">
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/esophagus_icon"
+                    android:contentDescription="Esophagus icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Esophagus"
+                        android:textColor="#FFFFFF"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The esophagus is a tube that moves food from the mouth to the stomach."
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnEsophagusAudio"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:src="@android:drawable/ic_lock_silent_mode_off"
+                    android:tint="#FF7A00"
+                    android:padding="10dp"
+                    android:contentDescription="Play esophagus audio" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="&#8595;"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FF7A00"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Stomach -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#FF9800"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp">
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/stomach_icon"
+                    android:contentDescription="Stomach icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stomach"
+                        android:textColor="#FFFFFF"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The stomach mixes food with digestive juices. It breaks food down into a soft liquid."
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnStomachAudio"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:src="@android:drawable/ic_lock_silent_mode_off"
+                    android:tint="#FF7A00"
+                    android:padding="10dp"
+                    android:contentDescription="Play stomach audio" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="&#8595;"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FF7A00"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Small Intestine -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#FFC107"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp">
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/small_intestine_icon"
+                    android:contentDescription="Small intestine icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Small Intestine"
+                        android:textColor="#FFFFFF"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The small intestine absorbs nutrients from food. These nutrients help our body grow and stay healthy."
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnSmallIntestineAudio"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:src="@android:drawable/ic_lock_silent_mode_off"
+                    android:tint="#FF7A00"
+                    android:padding="10dp"
+                    android:contentDescription="Play small intestine audio" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="&#8595;"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FF7A00"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Large Intestine -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:cardBackgroundColor="#FF9800"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp">
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/large_intestine_icon"
+                    android:contentDescription="Large intestine icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large Intestine"
+                        android:textColor="#FFFFFF"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The large intestine absorbs water from leftover food. The remaining waste then leaves the body."
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnLargeIntestineAudio"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:src="@android:drawable/ic_lock_silent_mode_off"
+                    android:tint="#FF7A00"
+                    android:padding="10dp"
+                    android:contentDescription="Play large intestine audio" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Video Button -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnWatchVideo"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginBottom="14dp"
+            app:cardBackgroundColor="#FF7A00"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Watch Digestion Video"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/btnBackHome"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Back to Home"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800"
+            android:layout_marginBottom="12dp" />
+
+
+    </LinearLayout>
+</ScrollView>
