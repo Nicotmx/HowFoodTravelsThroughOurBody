@@ -18,7 +18,7 @@ public class HomeActivity extends AppCompatActivity {
         btnLearn = findViewById(R.id.btnLearn);
         btnActivities = findViewById(R.id.btnActivities);
         btnQuiz = findViewById(R.id.btnQuiz);
-        btnAbout = findViewById(R.id.btnAbout);
+        btnAbout = findViewById(R.id.btnFoodScanner);
 
         // Learn Screen
         btnLearn.setOnClickListener(v -> {
@@ -34,12 +34,14 @@ public class HomeActivity extends AppCompatActivity {
 
         // Quiz Screen (later)
         btnQuiz.setOnClickListener(v -> {
-            // TODO: Open QuizActivity
+            Intent intent = new Intent(HomeActivity.this, QuizActivity.class);
+            startActivity(intent);
         });
 
-        // About Screen (later)
+        // Food Scanner Screen
         btnAbout.setOnClickListener(v -> {
-            // TODO: Open AboutActivity
+            Intent intent = new Intent(HomeActivity.this, FoodScannerActivity.class);
+            startActivity(intent);
         });
     }
 }

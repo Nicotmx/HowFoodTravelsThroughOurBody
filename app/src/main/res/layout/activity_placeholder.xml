@@ -19,6 +19,16 @@
         android:layout_marginBottom="16dp" />
 
     <TextView
+        android:id="@+id/txtPlaceholderDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This activity will be built soon."
+        android:textColor="#555555"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_marginBottom="28dp" />
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="This activity will be built soon."

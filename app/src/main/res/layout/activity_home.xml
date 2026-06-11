@@ -47,17 +47,18 @@
             android:layout_marginTop="8dp" />
 
         <!-- Welcome Text -->
+
+        <!-- LEARN CARD -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome Young Scientists!"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="#A65D00"
             android:layout_marginTop="6dp"
-            android:layout_marginBottom="30dp" />
+            android:layout_marginBottom="30dp"
+            android:text="Welcome Young Scientists!"
+            android:textColor="#A65D00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-        <!-- LEARN CARD -->
         <androidx.cardview.widget.CardView
             android:id="@+id/btnLearn"
             android:layout_width="match_parent"
@@ -227,7 +228,7 @@
 
         <!-- ABOUT CARD -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/btnAbout"
+            android:id="@+id/btnFoodScanner"
             android:layout_width="match_parent"
             android:layout_height="85dp"
             android:layout_marginBottom="24dp"
@@ -255,7 +256,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="12dp"
-                        android:src="@drawable/ic_about" />
+                        android:src="@drawable/scanner" />
                 </androidx.cardview.widget.CardView>
 
                 <TextView
@@ -263,7 +264,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginStart="20dp"
-                    android:text="About"
+                    android:text="Food Scanner"
                     android:textSize="26sp"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
