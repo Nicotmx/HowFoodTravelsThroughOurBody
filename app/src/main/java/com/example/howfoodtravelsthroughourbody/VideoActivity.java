@@ -31,7 +31,10 @@ public class VideoActivity extends AppCompatActivity {
         videoView.requestFocus();
 
         videoView.setOnPreparedListener(mp -> {
-            Toast.makeText(this, "Video is ready. Press play.", Toast.LENGTH_SHORT).show();
+            mp.setLooping(false);
+            mp.setVolume(1.0f, 1.0f);
+            videoView.start();
+            Toast.makeText(this, "Video is playing.", Toast.LENGTH_SHORT).show();
         });
 
         videoView.setOnErrorListener((mp, what, extra) -> {
