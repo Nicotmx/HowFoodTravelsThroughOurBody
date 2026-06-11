@@ -28,7 +28,8 @@ public class HomeActivity extends AppCompatActivity {
 
         // Activities Screen (later)
         btnActivities.setOnClickListener(v -> {
-            // TODO: Open ActivitiesMenuActivity
+            Intent intent = new Intent(HomeActivity.this, ActivitiesMenuActivity.class);
+            startActivity(intent);
         });
 
         // Quiz Screen (later)

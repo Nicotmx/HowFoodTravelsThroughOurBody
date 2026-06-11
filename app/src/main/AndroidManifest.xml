@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HowFoodTravelsThroughOurBody">
         <activity
+            android:name=".SimulatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DragDropActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodJourneyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrganExploreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitiesMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".VideoActivity"
             android:exported="false" />
         <activity
